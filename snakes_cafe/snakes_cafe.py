@@ -41,7 +41,7 @@ services=["wings","cookies","spring rolls",
     
 list_order=[]
 
-order= input()
+order= input(">")
 order=order.lower()
 while order != "quit":
          
@@ -55,7 +55,8 @@ while order != "quit":
         break       
     else:
         print("this order not fund in the list")    
-    order=input('** What would you like to order? **')
+    order=input('>')
+    order=order.lower()
 for i in list_order:
     print(i)
 
